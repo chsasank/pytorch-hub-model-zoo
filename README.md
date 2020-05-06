@@ -23,7 +23,7 @@ Here are the list of models available using torch hub
 
 # Torchvison
 
-* Repository Name: `pytorch/vision` https://img.shields.io/github/stars/pytorch/vision?style=flat
+* Repository Name: `pytorch/vision` ![Stars](https://img.shields.io/github/stars/pytorch/vision?style=social)
 * extra arguments:
     - pretrained (bool): If True, returns a model pre-trained on ImageNet
     - progress (bool): If True, displays a progress bar of the download to stderr
