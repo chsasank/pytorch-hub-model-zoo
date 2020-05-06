@@ -23,7 +23,7 @@ Here are the list of models available using torch hub
 
 # Torchvison
 
-* Repository Name: `pytorch/vision` ![Stars](https://img.shields.io/github/stars/pytorch/vision?style=social)
+* Repository Name: `pytorch/vision` [![Stars](https://img.shields.io/github/stars/pytorch/vision?style=social)](https://github.com/pytorch/vision)
 * extra arguments:
     - pretrained (bool): If True, returns a model pre-trained on ImageNet
     - progress (bool): If True, displays a progress bar of the download to stderr
@@ -50,7 +50,7 @@ Here are the list of models available using torch hub
 | resnet101 | ResNet-101 model | https://arxiv.org/abs/1512.03385 |
 | resnet152 | ResNet-152 model | https://arxiv.org/abs/1512.03385 |
 | squeezenet1_0 | SqueezeNet model architecture from the paper | https://arxiv.org/abs/1602.07360 |
-| squeezenet1_1 | SqueezeNet 1.1 model from the official SqueezeNet repo. SqueezeNet 1.1 has 2.4x less computation and slightly fewer parameters than SqueezeNet 1.0, without sacrificing accuracy. | https://arxiv.org/abs/1602.07360, https://github.com/DeepScale/SqueezeNet/tree/master/SqueezeNet_v1.1 |
+| squeezenet1_1 | SqueezeNet 1.1 model from the official SqueezeNet repo. SqueezeNet 1.1 has 2.4x less computation and slightly fewer parameters than SqueezeNet 1.0, without sacrificing accuracy. | https://arxiv.org/abs/1602.07360, [Original Repo](https://github.com/DeepScale/SqueezeNet/tree/master/SqueezeNet_v1.1) |
 | densenet121 | Densenet-121 model | https://arxiv.org/abs/1608.06993 |
 | densenet161 | Densenet-161 model | https://arxiv.org/abs/1608.06993 |
 | densenet169 | Densenet-169 model | https://arxiv.org/abs/1608.06993 |
