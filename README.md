@@ -138,6 +138,30 @@ Models already available in torchvision are excluded in this list.
 | `polynet` | PolyNet | https://arxiv.org/abs/1611.05725, [Caffe repo of the CUHK Multimedia Lab](https://github.com/CUHK-MMLAB/polynet) |
 
 
+# EfficientNet-PyTorch
+
+* Repository Name: `lukemelas/EfficientNet-PyTorch` [![Stars](https://img.shields.io/github/stars/lukemelas/EfficientNet-PyTorch?style=social)](https://github.com/lukemelas/EfficientNet-PyTorch)
+* extra arguments:
+    - num_classes (int, optional): Number of classes, default is 1000.
+    - in_channels (int, optional): Number of input channels, default is 3.
+    - pretrained (str, optional): One of [None, 'imagenet', 'advprop']. If None, no pretrained model is loaded. If 'imagenet', models trained on imagenet dataset are loaded. If 'advprop', models trained using adversarial training called advprop are loaded. It is important to note that the preprocessing required for the advprop pretrained models is slightly different from normal ImageNet preprocessing
+* Documentation: https://github.com/lukemelas/EfficientNet-PyTorch/blob/master/README.md
+
+## Image classification models
+
+| Model Name      | Description     | References                       |
+|-----------------|-----------------|----------------------------------|
+| `efficientnet_b0` | EfficientNet B0 | https://arxiv.org/abs/1905.11946 |
+| `efficientnet_b1` | EfficientNet B1 | https://arxiv.org/abs/1905.11946 |
+| `efficientnet_b2` | EfficientNet B2 | https://arxiv.org/abs/1905.11946 |
+| `efficientnet_b3` | EfficientNet B3 | https://arxiv.org/abs/1905.11946 |
+| `efficientnet_b4` | EfficientNet B4 | https://arxiv.org/abs/1905.11946 |
+| `efficientnet_b5` | EfficientNet B5 | https://arxiv.org/abs/1905.11946 |
+| `efficientnet_b6` | EfficientNet B6 | https://arxiv.org/abs/1905.11946 |
+| `efficientnet_b7` | EfficientNet B7 | https://arxiv.org/abs/1905.11946 |
+| `efficientnet_b8` | EfficientNet B8 | https://arxiv.org/abs/1905.11946 |
+
+
 # segmentation_models.pytorch
 
 * Repository Name: `qubvel/segmentation_models.pytorch` [![Stars](https://img.shields.io/github/stars/qubvel/segmentation_models.pytorch?style=social)](https://github.com/qubvel/segmentation_models.pytorch)
