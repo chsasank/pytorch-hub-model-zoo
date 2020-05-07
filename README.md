@@ -75,19 +75,19 @@ Here are the list of models available using torch hub
 
 | Model Name | Reference | References |
 |---|---|---|
-| fcn_resnet50 | Fully-Convolutional Network model with a ResNet-50 backbone | https://arxiv.org/abs/1411.4038 |
-| fcn_resnet101 | Fully-Convolutional Network model with a ResNet-101 backbone | https://arxiv.org/abs/1411.4038 |
-| deeplabv3_resnet50 | DeepLabV3 model with a ResNet-50 backbone | https://arxiv.org/abs/1706.05587 |
-| deeplabv3_resnet101 | DeepLabV3 model with a ResNet-101 backbone | https://arxiv.org/abs/1706.05587 |
+| `fcn_resnet50` | Fully-Convolutional Network model with a ResNet-50 backbone | https://arxiv.org/abs/1411.4038 |
+| `fcn_resnet101` | Fully-Convolutional Network model with a ResNet-101 backbone | https://arxiv.org/abs/1411.4038 |
+| `deeplabv3_resnet50` | DeepLabV3 model with a ResNet-50 backbone | https://arxiv.org/abs/1706.05587 |
+| `deeplabv3_resnet101` | DeepLabV3 model with a ResNet-101 backbone | https://arxiv.org/abs/1706.05587 |
 
 
 ## Object Detection Models
 
 | Model Name | Reference | References |
 |---|---|---|
-| fasterrcnn_resnet50_fpn | Faster R-CNN model with a ResNet-50-FPN backbone | https://arxiv.org/abs/1612.03144 |
-| maskrcnn_resnet50_fpn | Mask R-CNN model with a ResNet-50-FPN backbone | https://arxiv.org/abs/1703.06870 |
-| keypointrcnn_resnet50_fpn | Keypoint R-CNN model with a ResNet-50-FPN backbone |  |
+| `fasterrcnn_resnet50_fpn` | Faster R-CNN model with a ResNet-50-FPN backbone | https://arxiv.org/abs/1612.03144 |
+| `maskrcnn_resnet50_fpn` | Mask R-CNN model with a ResNet-50-FPN backbone | https://arxiv.org/abs/1703.06870 |
+| `keypointrcnn_resnet50_fpn` | Keypoint R-CNN model with a ResNet-50-FPN backbone |  |
 
 
 ## Example Usage
@@ -96,4 +96,45 @@ Here are the list of models available using torch hub
 import torch
 mnasnet = torch.hub.load('pytorch/vision', 'mnasnet0_5', pretrained=True)
 ```
+
+# pretrained-models.pytorch
+
+* Repository Name: `Cadene/pretrained-models.pytorch` [![Stars](https://img.shields.io/github/stars/Cadene/pretrained-models.pytorch?style=social)](https://github.com/Cadene/pretrained-models.pytorch)
+* extra arguments:
+    - num_classes (int): Number of classes
+    - pretrained (str): If None, pretrained model is not loaded. Else have to specify type of pretraining e.g. 'imagenet'.
+* Documentation: https://github.com/chsasank/pretrained-models.pytorch/blob/master/README.md
+
+
+## Image classification models
+
+Models already available in torchvision are excluded in this list.
+
+| Model Name | Description | References |
+|---|---|---|
+| `nasnetalarge` | NASNet A Large Model | https://arxiv.org/abs/1707.07012, [TensorFlow Slim repo](https://github.com/tensorflow/models/tree/master/research/slim) |
+| `nasnetamobile` | NASNet A Mobile Model | https://arxiv.org/abs/1707.07012, [TensorFlow Slim repo](https://github.com/tensorflow/models/tree/master/research/slim) |
+| `fbresnet152` | There are a bit different from the ResNet* of torchvision. ResNet152 is currently the only one available. | [Torch7 repo of FaceBook](https://github.com/facebook/fb.resnet.torch) |
+| `cafferesnet101` | Resnet101 ported from caffe repo | [Caffe repo of KaimingHe](https://github.com/KaimingHe/deep-residual-networks) |
+| `inceptionresnetv2` | Inception v2 Model with Residual connections | https://arxiv.org/abs/1602.07261, [TensorFlow Slim repo](https://github.com/tensorflow/models/tree/master/research/slim) |
+| `inceptionv4` | Inception v4 Model | https://arxiv.org/abs/1602.07261, [TensorFlow Slim repo](https://github.com/tensorflow/models/tree/master/research/slim) |
+| `bninception` | Inception model from batch norm paper | https://arxiv.org/abs/1502.03167, [Trained with caffe](https://github.com/Cadene/tensorflow-model-zoo.torch/pull/2) |
+| `resnext101_32x4d` | ResNeXT 101 32x4d model | https://arxiv.org/abs/1611.05431, [ResNeXt repo of FaceBook](https://github.com/facebookresearch/ResNeXt) |
+| `resnext101_62x4d` | ResNeXT 101 62x4d model | https://arxiv.org/abs/1611.05431, [ResNeXt repo of FaceBook](https://github.com/facebookresearch/ResNeXt) |
+| `dpn68` | DualPathNetwork 68 | https://arxiv.org/abs/1707.01629, [MXNET repo of Chen Yunpeng](https://github.com/cypw/DPNs) |
+| `dpn98` | DualPathNetwork 98 | https://arxiv.org/abs/1707.01629, [MXNET repo of Chen Yunpeng](https://github.com/cypw/DPNs) |
+| `dpn131` | DualPathNetwork 131 | https://arxiv.org/abs/1707.01629, [MXNET repo of Chen Yunpeng](https://github.com/cypw/DPNs) |
+| `dpn68b` | DualPathNetwork 68b | https://arxiv.org/abs/1707.01629, [MXNET repo of Chen Yunpeng](https://github.com/cypw/DPNs) |
+| `dpn92` | DualPathNetwork 92 | https://arxiv.org/abs/1707.01629, [MXNET repo of Chen Yunpeng](https://github.com/cypw/DPNs) |
+| `dpn107` | DualPathNetwork 107 | https://arxiv.org/abs/1707.01629, [MXNET repo of Chen Yunpeng](https://github.com/cypw/DPNs) |
+| `Xception` | Xception architecture | https://arxiv.org/abs/1610.02357, [Keras repo](https://github.com/keras-team/keras/blob/master/keras/applications/xception.py) |
+| `senet154` | SENet 154 | https://arxiv.org/abs/1709.01507, [Caffe repo of Jie Hu](https://github.com/hujie-frank/SENet) |
+| `se_resnet50` | Squeeze Excitation (SE) version of resnet50 | https://arxiv.org/abs/1709.01507, [Caffe repo of Jie Hu](https://github.com/hujie-frank/SENet) |
+| `se_resnet101` | Squeeze Excitation (SE) version of resnet101 | https://arxiv.org/abs/1709.01507, [Caffe repo of Jie Hu](https://github.com/hujie-frank/SENet) |
+| `se_resnet152` | Squeeze Excitation (SE) version of resnet152 | https://arxiv.org/abs/1709.01507, [Caffe repo of Jie Hu](https://github.com/hujie-frank/SENet) |
+| `se_resnext50_32x4d` | Squeeze Excitation (SE) version of ResNext50 | https://arxiv.org/abs/1709.01507, [Caffe repo of Jie Hu](https://github.com/hujie-frank/SENet) |
+| `se_resnext101_32x4d` | Squeeze Excitation (SE) version of resnet50 | https://arxiv.org/abs/1709.01507, [Caffe repo of Jie Hu](https://github.com/hujie-frank/SENet) |
+| `pnasnet5large` | PNASNET 5 Large | https://arxiv.org/abs/1712.00559, [TensorFlow Slim repo](https://github.com/tensorflow/models/tree/master/research/slim) |
+| `polynet` | PolyNet | https://arxiv.org/abs/1611.05725, [Caffe repo of the CUHK Multimedia Lab](https://github.com/CUHK-MMLAB/polynet) |
+
 
