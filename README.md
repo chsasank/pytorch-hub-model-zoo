@@ -138,3 +138,23 @@ Models already available in torchvision are excluded in this list.
 | `polynet` | PolyNet | https://arxiv.org/abs/1611.05725, [Caffe repo of the CUHK Multimedia Lab](https://github.com/CUHK-MMLAB/polynet) |
 
 
+# segmentation_models.pytorch
+
+* Repository Name: `qubvel/segmentation_models.pytorch` [![Stars](https://img.shields.io/github/stars/qubvel/segmentation_models.pytorch?style=social)](https://github.com/qubvel/segmentation_models.pytorch)
+* extra arguments:
+    - encoder_name (str): name of classification model (without last dense layers) used as feature extractor to build segmentation model.
+    - encoder_weights (str): one of `None` (random initialization), `imagenet` (pre-training on ImageNet).
+    - See `torch.hub.help` for all the other arguments
+* Documentation: https://github.com/qubvel/segmentation_models.pytorch/blob/master/README.md
+
+## Image Segmentation Models
+
+| Model Name | Description | References |
+|---|---|---|
+| `UNet` | UNet | https://arxiv.org/abs/1505.04597 |
+| `Linknet` | LinkNet | https://arxiv.org/abs/1707.03718 |
+| `FPN` | FPN (Feature Pyramid Networks) | https://arxiv.org/abs/1612.03144, [presentation](http://presentations.cocodataset.org/COCO17-Stuff-FAIR.pdf) |
+| `PSPNet` | Pyramid Scene Parsing Network (PSPNet) | https://arxiv.org/abs/1612.01105 |
+| `PAN` | Pyramid Attention Network (PAN) | https://arxiv.org/abs/1805.10180 |
+| `DeepLabV3` | DeepLab v3 | https://arxiv.org/abs/1706.05587 |
+| `DeepLabV3Plus` | DeepLab v3+ | https://arxiv.org/abs/1802.02611 |
